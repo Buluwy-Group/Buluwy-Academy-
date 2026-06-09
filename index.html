@@ -1,59 +1,512 @@
-<!DOCTYPE html><html lang="pt">
+<!DOCTYPE html>
+<html lang="pt">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Buluwy Academy</title>
-  <style>
-    body {font-family: Arial, sans-serif; margin:0; background:#0f172a; color:#fff;}
-    header {padding:20px; text-align:center; background:#020617;}
-    header h1 {margin:0; font-size:28px;}
-    nav {margin-top:10px;}
-    nav a {color:#38bdf8; margin:0 10px; text-decoration:none;}
-    section {padding:40px 20px; max-width:1000px; margin:auto;}
-    .hero {text-align:center;}
-    .hero h2 {font-size:32px;}
-    .btn {display:inline-block; margin-top:20px; padding:12px 20px; background:#38bdf8; color:#000; text-decoration:none; border-radius:6px; font-weight:bold;}
-    .courses {display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:20px;}
-    .card {background:#020617; padding:20px; border-radius:10px;}
-    footer {text-align:center; padding:20px; background:#020617; margin-top:40px;}
-  </style>
+  <meta name="description" content="Buluwy Academy — Aprenda, cresça, transforme. Cursos online profissionais em tecnologia, design, marketing e muito mais.">
+  <title>Buluwy Academy — Aprenda. Cresça. Transforme.</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Syne:wght@400;600;700;800&family=DM+Sans:ital,wght@0,300;0,400;0,500;1,300&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+  <link rel="stylesheet" href="./Assents/style.css">
+
+
 </head>
-<body><header>
-  <h1>Buluwy Academy</h1>
-  <nav>
-    <a href="#home">Início</a>
-    <a href="#cursos">Cursos</a>
-    <a href="#sobre">Sobre</a>
-    <a href="#contacto">Contacto</a>
-  </nav>
-</header><section id="home" class="hero">
-  <h2>Transforma teu conhecimento em renda</h2>
-  <p>Formação prática em tecnologia e negócios digitais</p>
-  <a class="btn" href="https://wa.me/258876055557">Falar no WhatsApp</a>
-</section><section id="cursos">
-  <h2>Cursos Disponíveis</h2>
-  <div class="courses">
-    <div class="card">
-      <h3>Excel do Zero ao Avançado</h3>
-      <p>Domina Excel e aumenta tua produtividade e renda.</p>
+<body>
+
+<!-- ─── NAVBAR ─── -->
+<nav>
+  <a href="./index.html" class="nav-logo">
+    <div class="logo-mark">B</div>
+    <div>
+      <div>BULUWY</div>
+      <div class="sub">ACADEMY</div>
     </div>
-    <div class="card">
-      <h3>Lógica de Programação</h3>
-      <p>Aprende a pensar como programador e cria soluções.</p>
+  </a>
+  <ul class="nav-center">
+    <li><a href="#categorias">Categorias</a></li>
+    <li><a href="#cursos">Cursos</a></li>
+    <li><a href="#instrutores">Instrutores</a></li>
+    <li><a href="#testemunhos">Avaliações</a></li>
+    <li><a href="#pagamentos">Pagamentos</a></li>
+  </ul>
+  <div class="nav-right">
+    <a href="./login.html" class="btn-nav-login">Entrar</a>
+    <a href="./login.html" class="btn-nav-cta">Registar</a>
+  </div>
+</nav>
+
+<!-- ─── HERO ─── -->
+<section class="hero" id="home">
+  <div class="hero-bg"></div>
+  <div class="hero-particles" id="particles"></div>
+  <div class="hero-content">
+    <div class="hero-badge"><i class="fas fa-graduation-cap"></i> Plataforma de Educação Digital Premium</div>
+    <h1>Aprenda.<br>Cresça.<br><span class="gradient">Transforme.</span></h1>
+    <p class="hero-sub">Cursos profissionais em tecnologia, design, marketing e empreendedorismo — criados para o mercado africano e com padrão internacional.</p>
+    <div class="hero-ctas">
+      <a href="#cursos" class="btn-blue"><i class="fas fa-play"></i> Explorar Cursos</a>
+      <a href="login.html#register" class="btn-white"><i class="fas fa-user-plus"></i> Criar Conta Grátis</a>
     </div>
-    <div class="card">
-      <h3>Marketing Digital</h3>
-      <p>Aprende a vender online e gerar leads diariamente.</p>
+    <div class="hero-trust">
+      <div class="trust-avatars">
+        <div class="av">MA</div>
+        <div class="av">JP</div>
+        <div class="av">CF</div>
+        <div class="av">RL</div>
+      </div>
+      <div class="trust-text">
+        <strong>500+ Estudantes</strong>
+        <span>já transformaram as suas carreiras</span>
+      </div>
+      <div class="trust-sep"></div>
+      <div class="trust-stat">
+        <strong>4.9</strong>
+        <span>⭐ Avaliação média</span>
+      </div>
     </div>
   </div>
-</section><section id="sobre">
-  <h2>Sobre a Buluwy</h2>
-  <p>A Buluwy Academy é uma plataforma focada em capacitar jovens com habilidades digitais práticas para o mercado.</p>
-</section><section id="contacto">
-  <h2>Contacto</h2>
-  <p>Pronto para começar? Fala connosco agora mesmo.</p>
-  <a class="btn" href="https://wa.me/258876055557">Contactar via WhatsApp</a>
-</section><footer>
-  <p>© 2026 Buluwy SU, Lda</p>
-</footer></body>
+  <div class="hero-right">
+    <div class="course-preview">
+      <div class="cp-thumb">
+        <div class="cp-thumb-icon">💻</div>
+        <div class="cp-play"><i class="fas fa-play"></i></div>
+      </div>
+      <div class="cp-body">
+        <div class="cp-cat">Programação</div>
+        <div class="cp-title">Lógica de Programação com VisuAlg</div>
+        <div class="cp-instructor">
+          <div class="cp-av">PDL</div>
+          <div class="cp-instructor-name">Formador: Paulo D. Lázaro</div>
+        </div>
+        <div class="cp-meta">
+          <span><i class="fas fa-clock"></i> 18 Sessões</span>
+          <span><i class="fas fa-users"></i> 120 alunos</span>
+          <span><i class="fas fa-signal"></i> Iniciante</span>
+        </div>
+        <div class="cp-price-row">
+          <div class="cp-price">2.500 <span class="currency">MZN</span></div>
+          <button class="cp-btn">Inscrever</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── CATEGORIAS ─── -->
+<section id="categorias">
+  <div class="cat-header reveal">
+    <div class="section-tag">O Que Podes Aprender</div>
+    <h2 class="section-title">Categorias de Cursos</h2>
+    <div class="divider"></div>
+    <p class="section-sub">Escolha a área que quer dominar e comece hoje mesmo.</p>
+  </div>
+  <div class="cat-grid">
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">💻</div><div class="cat-name">Programação</div><div class="cat-count">4 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">📊</div><div class="cat-name">Excel & Office</div><div class="cat-count">3 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">🎨</div><div class="cat-name">Design Gráfico</div><div class="cat-count">3 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">📱</div><div class="cat-name">Marketing Digital</div><div class="cat-count">4 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">🤖</div><div class="cat-name">Inteligência Artificial</div><div class="cat-count">2 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">🖥️</div><div class="cat-name">Informática</div><div class="cat-count">3 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">🚀</div><div class="cat-name">Empreendedorismo</div><div class="cat-count">2 cursos</div></a>
+    <a href="#cursos" class="cat-card reveal"><div class="cat-icon">🔒</div><div class="cat-name">Seg. Eletrónica</div><div class="cat-count">2 cursos</div></a>
+  </div>
+</section>
+
+<!-- ─── CURSOS ─── -->
+<section id="cursos">
+  <div class="courses-header reveal">
+    <div>
+      <div class="section-tag">Cursos em Destaque</div>
+      <h2 class="section-title">Todos os Cursos</h2>
+      <div class="divider"></div>
+    </div>
+    <a href="login.html#register" class="btn-blue">Ver Todos <i class="fas fa-arrow-right"></i></a>
+  </div>
+  <div class="courses-search">
+    <input class="search-input" type="text" placeholder="Pesquisar cursos, instrutores, tópicos...">
+    <select class="search-select">
+      <option>Todas as Categorias</option>
+      <option>Programação</option>
+      <option>Excel & Office</option>
+      <option>Design Gráfico</option>
+      <option>Marketing Digital</option>
+      <option>Inteligência Artificial</option>
+    </select>
+    <select class="search-select">
+      <option>Todos os Níveis</option>
+      <option>Iniciante</option>
+      <option>Intermédio</option>
+      <option>Avançado</option>
+    </select>
+  </div>
+  <div class="courses-grid">
+    <!-- CURSO 1 -->
+    <div class="course-card reveal">
+      <div class="course-thumb"><div class="course-thumb-icon">💻</div><span class="course-badge featured">⭐ Destaque</span></div>
+      <div class="course-body">
+        <div class="course-cat">Programação</div>
+        <div class="course-title">Lógica de Programação com VisuAlg</div>
+        <div class="course-instructor">Formador: Paulo D. Lázaro</div>
+        <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">5.0</span><span class="rating-count">(48 avaliações)</span></div>
+        <div class="course-meta-row"><span><i class="fas fa-clock"></i> 18 sessões</span><span><i class="fas fa-book"></i> 6 módulos</span><span><i class="fas fa-signal"></i> Iniciante</span></div>
+        <div class="course-footer">
+          <div class="course-price">1.500 <span class="currency">MZN</span></div>
+          <button class="btn-course">Ver Curso</button>
+        </div>
+      </div>
+    </div>
+    <!-- CURSO 2 -->
+    <div class="course-card reveal">
+      <div class="course-thumb" style="background:linear-gradient(135deg,rgba(0,196,140,0.2) 0%,rgba(0,196,140,0.04) 100%);"><div class="course-thumb-icon">📊</div><span class="course-badge">Novo</span></div>
+      <div class="course-body">
+        <div class="course-cat">Excel & Office</div>
+        <div class="course-title">Excel do Zero ao Avançado — Profissional</div>
+        <div class="course-instructor">Instrutora Carla Ferreira</div>
+        <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">4.9</span><span class="rating-count">(32 avaliações)</span></div>
+        <div class="course-meta-row"><span><i class="fas fa-clock"></i> 24 horas</span><span><i class="fas fa-book"></i> 8 módulos</span><span><i class="fas fa-signal"></i> Todos</span></div>
+        <div class="course-footer">
+          <div class="course-price">1.800 <span class="currency">MZN</span></div>
+          <button class="btn-course">Ver Curso</button>
+        </div>
+      </div>
+    </div>
+    <!-- CURSO 3 -->
+    <div class="course-card reveal">
+      <div class="course-thumb" style="background:linear-gradient(135deg,rgba(255,92,0,0.2) 0%,rgba(255,92,0,0.04) 100%);"><div class="course-thumb-icon">🎨</div><span class="course-badge featured">⭐ Destaque</span></div>
+      <div class="course-body">
+        <div class="course-cat">Design Gráfico</div>
+        <div class="course-title">Design Gráfico com Canva & Adobe — Completo</div>
+        <div class="course-instructor">Designer Rui Lopes</div>
+        <div class="course-rating"><span class="stars">★★★★½</span><span class="rating-num">4.7</span><span class="rating-count">(25 avaliações)</span></div>
+        <div class="course-meta-row"><span><i class="fas fa-clock"></i> 20 horas</span><span><i class="fas fa-book"></i> 7 módulos</span><span><i class="fas fa-signal"></i> Iniciante</span></div>
+        <div class="course-footer">
+          <div class="course-price">2.200 <span class="currency">MZN</span></div>
+          <button class="btn-course">Ver Curso</button>
+        </div>
+      </div>
+    </div>
+    <!-- CURSO 4 -->
+    <div class="course-card reveal">
+      <div class="course-thumb" style="background:linear-gradient(135deg,rgba(140,92,255,0.2) 0%,rgba(140,92,255,0.04) 100%);"><div class="course-thumb-icon">📱</div></div>
+      <div class="course-body">
+        <div class="course-cat">Marketing Digital</div>
+        <div class="course-title">Marketing Digital & Redes Sociais — Meta Ads</div>
+        <div class="course-instructor">João Paulo Silva</div>
+        <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">5.0</span><span class="rating-count">(18 avaliações)</span></div>
+        <div class="course-meta-row"><span><i class="fas fa-clock"></i> 16 horas</span><span><i class="fas fa-book"></i> 6 módulos</span><span><i class="fas fa-signal"></i> Intermédio</span></div>
+        <div class="course-footer">
+          <div class="course-price">1.500 <span class="currency">MZN</span></div>
+          <button class="btn-course">Ver Curso</button>
+        </div>
+      </div>
+    </div>
+    <!-- CURSO 5 -->
+    <div class="course-card reveal">
+      <div class="course-thumb" style="background:linear-gradient(135deg,rgba(255,184,0,0.2) 0%,rgba(255,184,0,0.04) 100%);"><div class="course-thumb-icon">🤖</div><span class="course-badge">Novo</span></div>
+      <div class="course-body">
+        <div class="course-cat">Inteligência Artificial</div>
+        <div class="course-title">IA Prática — ChatGPT, Midjourney e Automação</div>
+        <div class="course-instructor">Dra. Ana Mabjaia</div>
+        <div class="course-rating"><span class="stars">★★★★★</span><span class="rating-num">4.8</span><span class="rating-count">(12 avaliações)</span></div>
+        <div class="course-meta-row"><span><i class="fas fa-clock"></i> 12 horas</span><span><i class="fas fa-book"></i> 5 módulos</span><span><i class="fas fa-signal"></i> Todos</span></div>
+        <div class="course-footer">
+          <div class="course-price">1.900 <span class="currency">MZN</span></div>
+          <button class="btn-course">Ver Curso</button>
+        </div>
+      </div>
+    </div>
+    <!-- CURSO 6 -->
+    <div class="course-card reveal">
+      <div class="course-thumb" style="background:linear-gradient(135deg,rgba(45,111,255,0.3) 0%,rgba(45,111,255,0.05) 100%);"><div class="course-thumb-icon">🔒</div></div>
+      <div class="course-body">
+        <div class="course-cat">Segurança Eletrónica</div>
+        <div class="course-title">CCTV, Redes & Segurança Digital — Profissional</div>
+        <div class="course-instructor">Eng. Pedro Cossa</div>
+        <div class="course-rating"><span class="stars">★★★★½</span><span class="rating-num">4.6</span><span class="rating-count">(9 avaliações)</span></div>
+        <div class="course-meta-row"><span><i class="fas fa-clock"></i> 22 horas</span><span><i class="fas fa-book"></i> 9 módulos</span><span><i class="fas fa-signal"></i> Avançado</span></div>
+        <div class="course-footer">
+          <div class="course-price">3.000 <span class="currency">MZN</span></div>
+          <button class="btn-course">Ver Curso</button>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── INSTRUTORES ─── -->
+<section id="instrutores">
+  <div class="instructors-header reveal">
+    <div class="section-tag">Quem Vai Ensinar</div>
+    <h2 class="section-title">Os Nossos Instrutores</h2>
+    <div class="divider"></div>
+    <p class="section-sub" style="margin:0 auto;">Profissionais experientes, apaixonados por ensinar e transformar carreiras.</p>
+  </div>
+  <div class="instructors-grid">
+    <div class="instructor-card reveal">
+      <div class="instructor-avatar">GG</div>
+      <div class="instructor-name">Gustavo Guanabara</div>
+      <div class="instructor-role">Programação & Lógica</div>
+      <div class="instructor-bio">Especialista em lógica de programação, VisuAlg e Python com mais de 10 anos de experiência em ensino digital.</div>
+      <div class="instructor-courses"><strong>2</strong> cursos · <strong>168</strong> alunos</div>
+    </div>
+    <div class="instructor-card reveal">
+      <div class="instructor-avatar" style="background:linear-gradient(135deg,#00C48C,#00A876);">CF</div>
+      <div class="instructor-name">Carla Ferreira</div>
+      <div class="instructor-role">Excel & Microsoft Office</div>
+      <div class="instructor-bio">Formadora certificada Microsoft com especialização em Excel avançado, automação e análise de dados empresariais.</div>
+      <div class="instructor-courses"><strong>3</strong> cursos · <strong>214</strong> alunos</div>
+    </div>
+    <div class="instructor-card reveal">
+      <div class="instructor-avatar" style="background:linear-gradient(135deg,#FF5C00,#FF7A29);">RL</div>
+      <div class="instructor-name">Rui Lopes</div>
+      <div class="instructor-role">Design Gráfico</div>
+      <div class="instructor-bio">Designer profissional com projetos para marcas internacionais, especialista em Canva Pro, Adobe e identidade visual.</div>
+      <div class="instructor-courses"><strong>2</strong> cursos · <strong>95</strong> alunos</div>
+    </div>
+    <div class="instructor-card reveal">
+      <div class="instructor-avatar" style="background:linear-gradient(135deg,#8C5CFF,#6B3FCC);">AM</div>
+      <div class="instructor-name">Dra. Ana Mabjaia</div>
+      <div class="instructor-role">Inteligência Artificial</div>
+      <div class="instructor-bio">Investigadora e consultora em IA aplicada ao mercado moçambicano, com formação internacional em machine learning.</div>
+      <div class="instructor-courses"><strong>2</strong> cursos · <strong>87</strong> alunos</div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── TESTEMUNHOS ─── -->
+<section id="testemunhos">
+  <div class="testimonials-header reveal">
+    <div class="section-tag">O Que Dizem</div>
+    <h2 class="section-title">Histórias de Sucesso</h2>
+    <div class="divider"></div>
+  </div>
+  <div class="testimonials-grid">
+    <div class="testimonial-card reveal">
+      <div class="tc-stars">★★★★★</div>
+      <p class="tc-text">"A Buluwy Academy mudou completamente a minha trajetória profissional. O curso de Lógica de Programação foi exatamente o que precisava para entrar na área de TI."</p>
+      <div class="tc-author"><div class="tc-av">MA</div><div><div class="tc-name">Maria Albertina</div><div class="tc-course">Lógica de Programação</div></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="tc-stars">★★★★★</div>
+      <p class="tc-text">"Excelente qualidade de ensino, materiais bem organizados e o suporte dos instrutores é fantástico. Consegui um novo emprego 2 meses depois de terminar o curso de Excel."</p>
+      <div class="tc-author"><div class="tc-av" style="background:linear-gradient(135deg,#00C48C,#00A876);">JC</div><div><div class="tc-name">José Cumbe</div><div class="tc-course">Excel Profissional</div></div></div>
+    </div>
+    <div class="testimonial-card reveal">
+      <div class="tc-stars">★★★★★</div>
+      <p class="tc-text">"Finalmente uma plataforma educativa moçambicana com qualidade internacional. Os cursos de design me permitiram abrir o meu próprio estúdio criativo."</p>
+      <div class="tc-author"><div class="tc-av" style="background:linear-gradient(135deg,#FF5C00,#FF7A29);">FM</div><div><div class="tc-name">Fátima Muiambo</div><div class="tc-course">Design Gráfico</div></div></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FAQ ─── -->
+<section id="faq">
+  <div style="text-align:center;max-width:480px;margin:0 auto 16px;" class="reveal">
+    <div class="section-tag">Dúvidas Frequentes</div>
+    <h2 class="section-title">FAQ</h2>
+    <div class="divider" style="margin:18px auto;"></div>
+  </div>
+  <div class="faq-wrapper">
+    <div class="faq-item reveal">
+      <div class="faq-q">Como acedo ao curso depois da compra? <i class="fas fa-chevron-down faq-icon"></i></div>
+      <div class="faq-a"><p>Após a confirmação do pagamento, receberá um email com as credenciais de acesso. Faça login na sua conta e os conteúdos estarão disponíveis imediatamente na área do estudante.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Os cursos têm certificado? <i class="fas fa-chevron-down faq-icon"></i></div>
+      <div class="faq-a"><p>Sim! Todos os cursos da Buluwy Academy emitem certificado digital de conclusão após aprovação nas avaliações. Os certificados podem ser partilhados no LinkedIn e outros perfis profissionais.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Quais são os métodos de pagamento aceites? <i class="fas fa-chevron-down faq-icon"></i></div>
+      <div class="faq-a"><p>Aceitamos E-Mola, M-Pesa, transferência bancária, Visa, Mastercard e PayPal. Após o pagamento, envie o comprovativo através da plataforma ou por WhatsApp.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Por quanto tempo tenho acesso ao curso? <i class="fas fa-chevron-down faq-icon"></i></div>
+      <div class="faq-a"><p>O acesso é vitalício! Uma vez inscrito, poderá assistir às aulas quando quiser, quantas vezes precisar, incluindo futuras atualizações do conteúdo.</p></div>
+    </div>
+    <div class="faq-item reveal">
+      <div class="faq-q">Posso pedir reembolso? <i class="fas fa-chevron-down faq-icon"></i></div>
+      <div class="faq-a"><p>Oferecemos garantia de 7 dias. Se não ficar satisfeito nos primeiros 7 dias, devolvemos o pagamento na totalidade, sem perguntas.</p></div>
+    </div>
+  </div>
+</section>
+
+<!-- ─── PAGAMENTOS ─── -->
+<section id="pagamentos">
+  <div class="payment-wrapper">
+    <div class="payment-header reveal">
+      <div class="section-tag">Formas de Pagamento</div>
+      <h2 class="section-title">Como Pagar</h2>
+      <div class="divider"></div>
+      <p class="section-sub" style="margin:0 auto;">Escolha o método mais conveniente para si.</p>
+    </div>
+    <div class="payment-tabs reveal">
+      <button class="pay-tab active" onclick="switchTab('emola')">📱 E-Mola</button>
+      <button class="pay-tab" onclick="switchTab('visa')">💳 Visa / Mastercard</button>
+      <!--
+      <button class="pay-tab" onclick="switchTab('paypal')">🌐 PayPal</button>
+    -->
+    </div>
+    <div class="payment-content reveal">
+      <div class="payment-panel active" id="tab-emola">
+        <h4>Pagamento via E-Mola ou M-Pesa</h4>
+        <p>Transfira o valor do curso para o número abaixo e envie o comprovativo para confirmar a sua inscrição.</p>
+        <div class="payment-steps">
+          <div class="pay-step"><div class="pay-step-num">1</div><p>Abra a sua aplicação E-Mola ou M-Pesa no telemóvel</p></div>
+          <div class="pay-step"><div class="pay-step-num">2</div><p>Efetue uma transferência para o número <strong>87 605 5557</strong> (PAULO LAZARO)</p></div>
+          <div class="pay-step"><div class="pay-step-num">3</div><p>Indique no campo de referência o nome do curso e o seu nome completo</p></div>
+          <div class="pay-step"><div class="pay-step-num">4</div><p>Guarde o comprovativo e envie pelo WhatsApp clicando no botão abaixo.</p></div>
+         <a href="https://wa.me/258876055557" class="btn-blue" style="display:inline-flex;"><i class="fab fa-whatsapp"></i> Contactar via WhatsApp</a>
+        </div>
+        <!--
+        <div class="upload-area">
+          <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="upload-text">Arraste o comprovativo aqui ou <span>clique para selecionar</span></div>
+          <div class="upload-text" style="margin-top:6px;font-size:0.75rem;">PNG, JPG ou PDF · Máx. 5MB</div>
+        </div> -->
+      
+      </div>
+      <div class="payment-panel" id="tab-visa">
+        <h4>Pagamento com Cartão Visa ou Mastercard</h4>
+        <p>Pagamento seguro por cartão bancário. A integração com gateway de pagamento estará disponível em breve. Por enquanto, contacte-nos para processar manualmente.</p>
+        <!-- Área futura para integração com gateway de pagamento de cartão -->
+        <!-- Sistema futuro de pagamento Visa/Mastercard automático -->
+        <div class="payment-steps">
+          <div class="pay-step"><div class="pay-step-num">1</div><p>Entre em contacto via WhatsApp: <strong>+258 87 605 5557</strong></p></div>
+          <div class="pay-step"><div class="pay-step-num">2</div><p>Indique o curso desejado e será enviado um link de pagamento seguro</p></div>
+          <div class="pay-step"><div class="pay-step-num">3</div><p>Após o pagamento, o acesso ao curso é ativado em até 2 horas</p></div>
+        </div>
+        <a href="https://wa.me/258876055557" class="btn-blue" style="display:inline-flex;"><i class="fab fa-whatsapp"></i> Contactar via WhatsApp</a>
+      </div>
+      <!--
+      <div class="payment-panel" id="tab-paypal">
+        <h4>Pagamento via PayPal</h4>
+        <p>Para pagamentos internacionais, aceitamos PayPal. Envie o pagamento para o endereço abaixo e confirme por email.</p> -->
+        <!-- Área futura para integração PayPal automática -->
+        <!-- Sistema futuro de pagamento PayPal com confirmação automática -->
+        <!--
+        <div class="payment-steps">
+          <div class="pay-step"><div class="pay-step-num">1</div><p>Aceda à sua conta PayPal e envie o pagamento para <strong>pagamentos@buluwy.com</strong></p></div>
+          <div class="pay-step"><div class="pay-step-num">2</div><p>Na nota de pagamento, indique o nome do curso e o seu email de registo</p></div>
+          <div class="pay-step"><div class="pay-step-num">3</div><p>Envie o comprovativo de pagamento para <strong>academy@buluwy.com</strong></p></div>
+        </div> -->
+        <!--
+        <div class="upload-area">
+          <div class="upload-icon"><i class="fas fa-cloud-upload-alt"></i></div>
+          <div class="upload-text">Upload do comprovativo PayPal — <span>clique para selecionar</span></div>
+        </div>
+      </div>-->
+    
+    </div>
+  </div>
+</section>
+
+<!-- ─── CTA ─── -->
+<section id="cta" style="padding: 80px 60px;">
+  <div class="cta-block reveal">
+    <h2>Comece a aprender hoje.<br>O futuro não espera.</h2>
+    <p>Junte-se a mais de 500 estudantes que já estão a transformar as suas carreiras com a Buluwy Academy.</p>
+    <div class="cta-actions">
+      <a href="./login.html" class="btn-blue"><i class="fas fa-rocket"></i> Criar Conta Grátis</a>
+      <a href="#cursos" class="btn-white"><i class="fas fa-search"></i> Explorar Cursos</a>
+    </div>
+  </div>
+</section>
+
+<!-- ─── FOOTER ─── -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="../index.html" class="nav-logo" style="text-decoration:none;">
+          <div class="logo-mark">B</div>
+          <div>
+            <div style="font-family:var(--font-display);font-size:1.2rem;font-weight:800;">BULUWY</div>
+            <div style="font-size:0.65rem;color:var(--blue-light);font-weight:600;letter-spacing:0.12em;">ACADEMY</div>
+          </div>
+        </a>
+        <p>Plataforma de educação digital premium do Grupo Buluwy. Aprenda, cresça e transforme a sua carreira.</p>
+      </div>
+      <div class="footer-col">
+        <h5>Cursos</h5>
+        <ul>
+          <li><a href="#cursos">Programação</a></li>
+          <li><a href="#cursos">Excel & Office</a></li>
+          <li><a href="#cursos">Design Gráfico</a></li>
+          <li><a href="#cursos">Marketing Digital</a></li>
+          <li><a href="#cursos">Inteligência Artificial</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Conta</h5>
+        <ul>
+          <li><a href="login.html">Login</a></li>
+          <li><a href="login.html">Registar</a></li>
+          <li><a href="./login.html">Painel do Aluno</a></li>
+          <li><a href="./login.html">Meus Cursos</a></li>
+          <li><a href="./login.html">Certificados</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h5>Suporte</h5>
+        <ul>
+          <li><a href="#faq">FAQ</a></li>
+          <li><a href="#pagamentos">Pagamentos</a></li>
+          <li><a href="../index.html#contacto">Contacto</a></li>
+          <li><a href="www.buluwy.com">Grupo Buluwy</a></li>
+          <li><a href="www.media.buluwy.com">Buluwy Media</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>© 2026 Buluwy Academy — Divisão do Grupo Buluwy SU, Lda. Todos os direitos reservados.</p>
+      <div class="footer-bottom-links">
+        <a href="#">Privacidade</a>
+        <a href="#">Termos</a>
+        <a href="#">Cookies</a>
+      </div>
+    </div>
+  </div>
+</footer>
+
+<!-- ─── Área futura para upload de cursos Tutor LMS ─── -->
+<!-- Sistema futuro de gestão de vídeos Buluwy Academy -->
+<!-- Área futura: Integração WordPress + Tutor LMS -->
+<!-- Sistema futuro: Gestão de conteúdos por instrutores -->
+
+<script>
+  // Particles
+  const pContainer = document.getElementById('particles');
+  for (let i = 0; i < 20; i++) {
+    const p = document.createElement('div');
+    p.className = 'particle';
+    p.style.cssText = `left:${Math.random()*100}%;animation-duration:${8+Math.random()*12}s;animation-delay:${Math.random()*10}s;opacity:${0.3+Math.random()*0.5};`;
+    pContainer.appendChild(p);
+  }
+
+  // Scroll reveal
+  const observer = new IntersectionObserver((entries) => {
+    entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('visible'); });
+  }, { threshold: 0.08 });
+  document.querySelectorAll('.reveal').forEach(el => observer.observe(el));
+
+  // FAQ
+  document.querySelectorAll('.faq-q').forEach(q => {
+    q.addEventListener('click', () => {
+      const item = q.parentElement;
+      const wasOpen = item.classList.contains('open');
+      document.querySelectorAll('.faq-item').forEach(i => i.classList.remove('open'));
+      if (!wasOpen) item.classList.add('open');
+    });
+  });
+
+  // Payment tabs
+  function switchTab(id) {
+    document.querySelectorAll('.pay-tab').forEach(t => t.classList.remove('active'));
+    document.querySelectorAll('.payment-panel').forEach(p => p.classList.remove('active'));
+    event.currentTarget.classList.add('active');
+    document.getElementById('tab-'+id).classList.add('active');
+  }
+</script>
+</body>
 </html>
